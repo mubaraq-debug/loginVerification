@@ -1,3 +1,13 @@
+# tasks to be performed:
+
+do the responsive design
+create a 'create account page'
+create a 'forget password page'
+activate the visibility button
+activate the login and register button on both the login and register page respectively
+link the users account to their social media
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
