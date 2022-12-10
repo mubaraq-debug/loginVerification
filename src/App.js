@@ -8,12 +8,27 @@ import { IoPersonCircle,
   IoEye, 
   IoLogoFacebook, 
   IoLogoTwitter, 
-  IoLogoGoogle 
+  IoLogoGoogle, 
+  IoEyeOffOutline
   } from 'react-icons/io5';
 import './App.css';
+import { useState } from "react";
+
 
 function App() {
+//testing login button
 
+
+  function letArt () {
+    console.log('in am clicked');
+  }
+
+//switching password visibility 
+
+    const [isVisible, setVisible] = useState(false);
+    const toggle = () => {
+      setVisible(!isVisible);
+    };
 
   return (
     <>
@@ -24,13 +39,16 @@ function App() {
              <FormPart>
                 <div className="email">
                   <div className="personIcon"> <IoPersonCircle id="icon"/> </div>
-                  <input type="text" name="username" id="username" placeholder='Username or email' />
+                  <input type="text" name="username" id="username" placeholder='Username or email' required />
                 </div>
                 
                 <div className="password">
                   <div className="passwordIcon"> <IoKeySharp id="icon"/> </div>
-                  <input type="password" name="password" id="password" placeholder='Password' />
-                  <div className="visibility"> <IoEye /> </div>
+                  <input  name="password" id="password" placeholder='Password'
+                   type={!isVisible ? "password" : "text"}
+                   required/>
+                  <div className="visibility"
+                   onClick={toggle}> {isVisible ? <IoEye />  : <IoEyeOffOutline />} </div>
                 </div>
              </FormPart>
 
@@ -38,7 +56,7 @@ function App() {
             <div className="rem">
               <input type="checkbox" name="remember_me" id="rem_me" />
               <label htmlFor="remember_me">Remember me</label>
-              <button id="log">Login</button>
+              <button onClick={letArt} id="log">Login</button>
             </div>
 
             <div className="regFor">
@@ -56,7 +74,7 @@ function App() {
             <MediaLogin>
                 <div className="mediabox">
                   <div className="icon" style={{backgroundColor: '#3b5998'}}>< IoLogoFacebook /></div>
-                  <div className="text" style={{backgroundColor: '#1b77f2'}}>LOGIN WITH FACEBOOK</div>
+                  <div className="text" style={{backgroundColor: '#1b77f2'}} onClick={() => window.location = 'mubaraqmuhammad06@gmail.com'}>LOGIN WITH FACEBOOK</div>
                 </div>
 
                 <div className="mediabox">

@@ -18,11 +18,11 @@ export const Flex = styled.div`
 
 
     @media screen and (max-width: ${size.mobileL}) {
-        margin-left: 5rem;
+        margin-left: 4rem;
         margin-top: 4rem;
     }
     @media screen and (max-width: ${size.mobileM}) {
-        margin-left: 3rem;
+        margin-left: 1.5rem;
     }
     @media screen and (max-width: ${size.tablet}) {
         gap: 30px;
