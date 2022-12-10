@@ -73,18 +73,18 @@ function App() {
 
             <MediaLogin>
                 <div className="mediabox">
-                  <div className="icon" style={{backgroundColor: '#3b5998'}}>< IoLogoFacebook /></div>
-                  <div className="text" style={{backgroundColor: '#1b77f2'}} onClick={() => window.location = 'mubaraqmuhammad06@gmail.com'}>LOGIN WITH FACEBOOK</div>
+                  <div className="icon" style={{backgroundColor: '#3b5998', paddingTop: 14}}>< IoLogoFacebook /></div>
+                  <div className="text" style={{backgroundColor: '#1b77f2', paddingTop: 17}} onClick={() => window.location = 'mubaraqmuhammad06@gmail.com'}>LOGIN WITH FACEBOOK</div>
                 </div>
 
                 <div className="mediabox">
-                  <div className="icon" style={{backgroundColor: '#0084b4'}}>< IoLogoTwitter /></div>
-                  <div className="text" style={{backgroundColor: '#00aced'}}>LOGIN WITH TWITTER</div>
+                  <div className="icon" style={{backgroundColor: '#0084b4' , paddingTop: 14}}>< IoLogoTwitter /></div>
+                  <div className="text" style={{backgroundColor: '#00aced' , paddingTop: 17}}>LOGIN WITH TWITTER</div>
                 </div>
 
                 <div className="mediabox">
-                  <div className="icon" style={{backgroundColor: '#ea4335'}}>< IoLogoGoogle/></div>
-                  <div className="text" style={{backgroundColor: '#ff3e30'}}>LOGIN WITH GOOGLE</div>
+                  <div className="icon" style={{backgroundColor: '#ea4335', paddingTop: 14}}>< IoLogoGoogle/></div>
+                  <div className="text" style={{backgroundColor: '#ff3e30', paddingTop: 17}}>LOGIN WITH GOOGLE</div>
                 </div>
             </MediaLogin>
 

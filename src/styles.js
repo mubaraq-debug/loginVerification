@@ -19,10 +19,11 @@ export const Flex = styled.div`
 
     @media screen and (max-width: ${size.mobileL}) {
         margin-left: 4rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     @media screen and (max-width: ${size.mobileM}) {
-        margin-left: 1.5rem;
+        margin-left: 1.7rem;
+        margin-top: 1.5rem;
     }
     @media screen and (max-width: ${size.tablet}) {
         gap: 30px;
@@ -183,10 +184,10 @@ export const MediaLogin = styled.div`
         color: #fff;
 
         .icon {
-            padding-top: 5px;
-            padding-left: 13px;
+            // padding-top: 5px;
+            padding-left: 15px;
             font-size: 1.3rem;
-            height: 40px;
+            height: 38px;
             width: 40px;
             border: 1px solid gray;
             border-top-left-radius: 5px;
@@ -195,13 +196,13 @@ export const MediaLogin = styled.div`
         }
 
         .text {
-            height: 40px;
+            height: 35px;
             width: 220px;
             border: 1px solid gray;
             margin-left: -2px;
             outline: none;
             padding-left: 15px;
-            padding-top: 5px;
+            // padding-top: 5px;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             font-size: 14px;
